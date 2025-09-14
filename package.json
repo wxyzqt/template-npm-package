@@ -1,0 +1,47 @@
+{
+  "name": "template-npm-package",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "vitest",
+    "docs": "typedoc --options typedoc.json",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "prettier": "3.6.2",
+    "rollup": "^4.50.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "tslib": "^2.8.1",
+    "typedoc": "^0.28.12",
+    "typedoc-github-theme": "^0.3.1",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.43.0",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "utility-types": "^3.11.0"
+  }
+}
